@@ -433,15 +433,23 @@
                             placeholder="adres@firma.pl">
                     </div>
                     <div class="group">
-                        <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Co Cię męczy?</label>
-                        <select name="problem_type"
-                            class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors">
-                            <option value="overload">Ludzie nie wyrabiają się z pracą</option>
-                            <option value="chaos">Toniemy w papierach/mailach</option>
-                            <option value="prototype">Chcę sprawdzić pomysł (Prototyp)</option>
-                            <option value="talk">Po prostu pogadać o zmianie</option>
-                        </select>
+                        <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Numer telefonu <span
+                                class="text-gray-600">(opcjonalnie)</span></label>
+                        <input type="tel" name="phone"
+                            class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors"
+                            placeholder="+48 123 456 789">
                     </div>
+                </div>
+
+                <div class="group mb-8">
+                    <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Co Cię męczy?</label>
+                    <select name="problem_type"
+                        class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors">
+                        <option value="overload">Ludzie nie wyrabiają się z pracą</option>
+                        <option value="chaos">Toniemy w papierach/mailach</option>
+                        <option value="prototype">Chcę sprawdzić pomysł (Prototyp)</option>
+                        <option value="talk">Po prostu pogadać o zmianie</option>
+                    </select>
                 </div>
 
                 <div class="group mb-8">
