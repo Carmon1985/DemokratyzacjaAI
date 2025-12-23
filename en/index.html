@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Studio.AI | Pragmatyczne wdrożenia AI dla firm - Konsultant z 20-letnim doświadczeniem</title>
+    <title>Studio.AI | Pragmatic AI Implementation for Business - 20 Years of Experience</title>
     <meta name="description"
-        content="Zmęczony korporacyjnymi wdrożeniami? Pomagam firmom wprowadzać AI bez wielkich budżetów IT. Lekkie rozwiązania, szybkie prototypy, realne efekty. 20 lat doświadczenia w transformacji cyfrowej.">
+        content="Tired of corporate implementations? I help businesses adopt AI without huge IT budgets. Lightweight solutions, rapid prototypes, real results. 20 years of digital transformation experience.">
     <meta name="keywords"
-        content="konsultant AI, wdrożenia AI, automatyzacja procesów, sztuczna inteligencja dla firm, transformacja cyfrowa, prototypowanie AI, asystent AI, optymalizacja procesów biznesowych">
+        content="AI consultant, AI implementation, process automation, artificial intelligence for business, digital transformation, AI prototyping, AI assistant, business process optimization">
     <meta name="author" content="Studio.AI">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://carmon1985.github.io/DemokratyzacjaAI/">
+    <link rel="canonical" href="https://carmon1985.github.io/DemokratyzacjaAI/en/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://carmon1985.github.io/DemokratyzacjaAI/">
-    <meta property="og:title" content="Studio.AI | Pragmatyczne wdrożenia AI dla firm">
+    <meta property="og:url" content="https://carmon1985.github.io/DemokratyzacjaAI/en/">
+    <meta property="og:title" content="Studio.AI | Pragmatic AI Implementation for Business">
     <meta property="og:description"
-        content="Pomagam firmom wprowadzać AI bez wielkich budżetów IT. Lekkie rozwiązania, szybkie prototypy, realne efekty. 20 lat doświadczenia.">
+        content="I help businesses adopt AI without huge IT budgets. Lightweight solutions, rapid prototypes, real results. 20 years of experience.">
     <meta property="og:image" content="https://carmon1985.github.io/DemokratyzacjaAI/img/og-image.png">
-    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Studio.AI">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://carmon1985.github.io/DemokratyzacjaAI/">
-    <meta name="twitter:title" content="Studio.AI | Pragmatyczne wdrożenia AI dla firm">
+    <meta name="twitter:url" content="https://carmon1985.github.io/DemokratyzacjaAI/en/">
+    <meta name="twitter:title" content="Studio.AI | Pragmatic AI Implementation for Business">
     <meta name="twitter:description"
-        content="Pomagam firmom wprowadzać AI bez wielkich budżetów IT. Lekkie rozwiązania, szybkie prototypy, realne efekty.">
+        content="I help businesses adopt AI without huge IT budgets. Lightweight solutions, rapid prototypes, real results.">
     <meta name="twitter:image" content="https://carmon1985.github.io/DemokratyzacjaAI/img/og-image.png">
 
     <!-- Structured Data - JSON-LD -->
@@ -39,8 +39,8 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Studio.AI",
-        "description": "Pragmatyczne wdrożenia AI dla firm. Konsultant z 20-letnim doświadczeniem w transformacji cyfrowej.",
-        "url": "https://carmon1985.github.io/DemokratyzacjaAI",
+        "description": "Pragmatic AI implementation for businesses. Consultant with 20 years of digital transformation experience.",
+        "url": "https://carmon1985.github.io/DemokratyzacjaAI/en/",
         "logo": "https://carmon1985.github.io/DemokratyzacjaAI/img/og-image.png",
         "sameAs": [],
         "address": {
@@ -48,8 +48,8 @@
             "addressCountry": "PL"
         },
         "priceRange": "$$",
-        "areaServed": "PL",
-        "serviceType": ["Konsulting AI", "Automatyzacja procesów", "Prototypowanie", "Wdrożenia sztucznej inteligencji"],
+        "areaServed": ["PL", "EU"],
+        "serviceType": ["AI Consulting", "Process Automation", "Prototyping", "Artificial Intelligence Implementation"],
         "knowsAbout": ["Artificial Intelligence", "Process Automation", "Digital Transformation", "Rapid Prototyping"]
     }
     </script>
@@ -59,10 +59,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- Favicon (dodaj własne pliki) -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 
     <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -90,7 +90,6 @@
             font-family: 'Outfit', sans-serif;
         }
 
-        /* 3D Canvas Background */
         #canvas-container {
             position: fixed;
             top: 0;
@@ -100,7 +99,6 @@
             z-index: -1;
         }
 
-        /* Premium Glassmorphism */
         .glass-panel {
             background: rgba(5, 6, 8, 0.85);
             backdrop-filter: blur(20px);
@@ -122,12 +120,10 @@
             transform: translateY(-5px);
         }
 
-        /* Typography Polish */
         .tracking-premium {
             letter-spacing: 0.2em;
         }
 
-        /* The Interface Button */
         .cta-interface {
             display: inline-flex;
             align-items: center;
@@ -162,7 +158,6 @@
             transform: rotate(45deg);
         }
 
-        /* Inspiration Image Hover */
         .inspire-img {
             transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
@@ -191,12 +186,12 @@
 
                 <div
                     class="hidden md:flex items-center space-x-12 text-xs font-medium tracking-premium uppercase text-gray-400">
-                    <a href="#doswiadczenie" class="hover:text-white transition-colors duration-300">Moja droga</a>
-                    <a href="#usecases" class="hover:text-white transition-colors duration-300">Jak pomagam</a>
-                    <a href="en/" class="hover:text-white transition-colors duration-300">🇬🇧 English</a>
-                    <a href="#kontakt"
+                    <a href="#experience" class="hover:text-white transition-colors duration-300">My Journey</a>
+                    <a href="#usecases" class="hover:text-white transition-colors duration-300">How I Help</a>
+                    <a href="../" class="hover:text-white transition-colors duration-300">🇵🇱 Polski</a>
+                    <a href="#contact"
                         class="text-white border border-white/20 px-6 py-2 rounded-full hover:bg-white hover:text-black transition-all">
-                        Porozmawiajmy
+                        Let's Talk
                     </a>
                 </div>
             </div>
@@ -210,31 +205,31 @@
             <div class="inline-block mb-8">
                 <span
                     class="text-xs font-mono text-blue-400 tracking-widest uppercase border border-blue-500/30 bg-blue-500/10 px-3 py-1 rounded">20
-                    Lat Doświadczenia</span>
+                    Years of Experience</span>
             </div>
 
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-heading font-light text-white mb-8 leading-[1.1]">
-                Trafia mnie <span class="font-bold relative inline-block text-white">szlag<span
+                I'm <span class="font-bold relative inline-block text-white">frustrated<span
                         class="absolute bottom-2 left-0 w-full h-3 bg-red-600/60 -z-10 transform -rotate-2"></span></span>.
             </h1>
 
             <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
-                Świat AI pędzi, a my toniemy w starych procedurach. Ludzie po prostu nie nadążają.<br />
-                Zmęczyłem się budowaniem wielkich systemów w korporacjach.
-                Teraz chcę Ci pomóc <strong class="text-white font-medium">odnaleźć się w tym chaosie</strong>. Bez
-                stawiania "produkcyjnych kobył". Po prostu ułatwiając pracę.
+                The AI world is racing ahead while we drown in outdated procedures. People simply can't keep up.<br />
+                I got tired of building massive systems in corporations.
+                Now I want to help you <strong class="text-white font-medium">navigate this chaos</strong>. Without
+                building "production beasts". Just making work easier.
             </p>
 
             <p class="text-sm text-gray-500 mb-12 max-w-2xl mx-auto font-mono">
-                [ZASADA WSPÓŁPRACY] Szukam sensu, nie faktur. Jeśli masz problem, który Cię przytłacza – opisz go. Jeśli
-                uznam, że mogę realnie pomóc – <span class="text-white border-b border-gray-600">zrobię to pro
-                    bono</span>, by sprawdzić siłę prostych rozwiązań.
+                [COLLABORATION PRINCIPLE] I seek meaning, not invoices. If you have a problem that overwhelms you –
+                describe it. If I believe I can truly help – <span class="text-white border-b border-gray-600">I'll do
+                    it pro bono</span>, to prove the power of simple solutions.
             </p>
 
-            <a href="#kontakt" class="cta-interface group mx-auto">
+            <a href="#contact" class="cta-interface group mx-auto">
                 <div class="text-left">
-                    <span class="block text-xs text-gray-500 uppercase tracking-widest">Potrzebuję wsparcia</span>
-                    <span class="block text-lg font-heading text-white">Opisz swój problem</span>
+                    <span class="block text-xs text-gray-500 uppercase tracking-widest">I Need Support</span>
+                    <span class="block text-lg font-heading text-white">Describe Your Problem</span>
                 </div>
                 <div class="cta-icon-circle">
                     <i class="fa-solid fa-arrow-down"></i>
@@ -244,44 +239,44 @@
 
         <div class="absolute bottom-12 w-full text-center">
             <p class="text-xs text-gray-600 font-mono uppercase tracking-widest opacity-60">Mentor • Facilitator •
-                Pragmatyk</p>
+                Pragmatist</p>
         </div>
     </section>
 
-    <!-- Experience Section (Human & Tired approach) -->
-    <section id="doswiadczenie" class="py-32 relative z-10">
+    <!-- Experience Section -->
+    <section id="experience" class="py-32 relative z-10">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
 
                 <!-- Text Narrative -->
                 <div>
-                    <span class="text-gray-500 font-mono text-xs tracking-widest mb-4 block">/// KONTEKST</span>
+                    <span class="text-gray-500 font-mono text-xs tracking-widest mb-4 block">/// CONTEXT</span>
                     <h2 class="text-4xl md:text-5xl font-heading font-light text-white mb-10 leading-tight">
-                        Zmęczył mnie wyścig.<br>
-                        <span class="font-bold">Chcę sensownych zmian.</span>
+                        I'm tired of the race.<br>
+                        <span class="font-bold">I want meaningful change.</span>
                     </h2>
 
                     <div class="space-y-6 text-gray-400 text-lg font-light">
                         <p>
-                            Spędziłem 20 lat w korporacjach. Widziałem projekty za miliony, które nikomu nie pomagały.
-                            Widziałem ludzi wypalonych przez procedury, podczas gdy technologia miała ich odciążyć.
+                            I spent 20 years in corporations. I saw million-dollar projects that helped no one.
+                            I saw people burned out by procedures, while technology was supposed to lighten their load.
                         </p>
                         <p class="text-white text-xl border-l-2 border-blue-500 pl-6 py-2 my-8">
-                            "AI to nie kolejna maszyna do wdrożenia. To szansa, żebyśmy w końcu przestali robić rzeczy,
-                            których nienawidzimy."
+                            "AI is not just another machine to implement. It's a chance for us to finally stop doing
+                            things we hate."
                         </p>
                         <p>
-                            Nie chcę budować Ci kolejnego ciężkiego systemu ("kobyły"), którego nikt nie będzie używał.
-                            Chcę wejść w Twój proces, zobaczyć gdzie ludzie nie nadążają i użyć AI punktowo – tam, gdzie
-                            przyniesie to ulgę i spokój.
+                            I don't want to build you another heavy system ("beast") that no one will use.
+                            I want to enter your process, see where people struggle, and apply AI precisely – where it
+                            brings relief and peace.
                         </p>
                     </div>
 
                     <div class="mt-10 flex gap-4">
                         <span
-                            class="px-4 py-2 border border-white/10 rounded-lg text-sm text-gray-400">#LudzkiePodejście</span>
+                            class="px-4 py-2 border border-white/10 rounded-lg text-sm text-gray-400">#HumanApproach</span>
                         <span
-                            class="px-4 py-2 border border-white/10 rounded-lg text-sm text-gray-400">#Pragmatyzm</span>
+                            class="px-4 py-2 border border-white/10 rounded-lg text-sm text-gray-400">#Pragmatism</span>
                     </div>
                 </div>
 
@@ -291,7 +286,7 @@
                         class="absolute -inset-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 blur-xl opacity-50">
                     </div>
                     <div class="premium-card p-12 relative bg-black/80">
-                        <h3 class="text-xs font-mono text-gray-500 uppercase mb-8">Moja Filozofia</h3>
+                        <h3 class="text-xs font-mono text-gray-500 uppercase mb-8">My Philosophy</h3>
 
                         <div class="space-y-6">
                             <div class="flex items-start gap-4">
@@ -299,9 +294,9 @@
                                     class="w-8 h-8 rounded bg-blue-900/30 flex items-center justify-center text-blue-400 font-bold mt-1">
                                     1</div>
                                 <div>
-                                    <h4 class="text-white font-bold text-lg">Zrozumieć Człowieka</h4>
-                                    <p class="text-sm text-gray-500">Zanim dotknę technologii, chcę wiedzieć, co męczy
-                                        Twoich ludzi.</p>
+                                    <h4 class="text-white font-bold text-lg">Understand the Human</h4>
+                                    <p class="text-sm text-gray-500">Before I touch technology, I want to know what
+                                        exhausts your people.</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
@@ -309,9 +304,9 @@
                                     class="w-8 h-8 rounded bg-blue-900/30 flex items-center justify-center text-blue-400 font-bold mt-1">
                                     2</div>
                                 <div>
-                                    <h4 class="text-white font-bold text-lg">Lekkie Rozwiązania</h4>
-                                    <p class="text-sm text-gray-500">Unikam wielkich wdrożeń. Szukam małych
-                                        automatyzacji, które dają duży efekt.</p>
+                                    <h4 class="text-white font-bold text-lg">Lightweight Solutions</h4>
+                                    <p class="text-sm text-gray-500">I avoid massive implementations. I look for small
+                                        automations that deliver big impact.</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
@@ -319,9 +314,9 @@
                                     class="w-8 h-8 rounded bg-blue-900/30 flex items-center justify-center text-blue-400 font-bold mt-1">
                                     3</div>
                                 <div>
-                                    <h4 class="text-white font-bold text-lg">Wsparcie w Procesie</h4>
-                                    <p class="text-sm text-gray-500">AI ma być asystentem, który zdejmuje ciężar, a nie
-                                        szefem, który dokłada pracy.</p>
+                                    <h4 class="text-white font-bold text-lg">Process Support</h4>
+                                    <p class="text-sm text-gray-500">AI should be an assistant that lifts the burden,
+                                        not a boss that adds more work.</p>
                                 </div>
                             </div>
                         </div>
@@ -332,14 +327,14 @@
         </div>
     </section>
 
-    <!-- Inspirations / Use Cases Section -->
+    <!-- Use Cases Section -->
     <section id="usecases" class="py-32 relative z-10 bg-white/[0.02]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16 flex flex-col md:flex-row justify-between items-end">
                 <div>
-                    <h2 class="text-4xl font-heading text-white mb-4">Gdzie mogę pomóc?</h2>
+                    <h2 class="text-4xl font-heading text-white mb-4">Where Can I Help?</h2>
                     <p class="text-gray-500 max-w-xl">
-                        Oto przykłady problemów, które rozwiązuję "lekko", bez wielkich budżetów IT.
+                        Here are examples of problems I solve "lightly", without huge IT budgets.
                     </p>
                 </div>
             </div>
@@ -348,18 +343,17 @@
                 <!-- Use Case 1 -->
                 <div class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer">
                     <div class="absolute inset-0 z-0">
-                        <!-- Ilustracja: Chaos dokumentów -->
-                        <img src="img/chaos.png"
+                        <img src="../img/chaos.png"
                             class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
-                            alt="Chaos dokumentów">
+                            alt="Document chaos">
                     </div>
                     <div class="relative z-10">
-                        <span class="text-xs font-mono text-blue-400 mb-2 block">UJARZMIENIE CHAOSU</span>
-                        <h3 class="text-2xl font-heading text-white mb-2">Inteligentny Asystent</h3>
+                        <span class="text-xs font-mono text-blue-400 mb-2 block">TAMING THE CHAOS</span>
+                        <h3 class="text-2xl font-heading text-white mb-2">Intelligent Assistant</h3>
                         <p
                             class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                            Masz dość przekopywania się przez tysiące maili i dokumentów? Wdróżmy proste AI, które
-                            "przeczyta" to za Ciebie i wyciągnie wnioski.
+                            Tired of digging through thousands of emails and documents? Let's deploy simple AI that
+                            "reads" it for you and draws conclusions.
                         </p>
                     </div>
                 </div>
@@ -368,18 +362,17 @@
                 <div
                     class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer border-t-2 border-t-blue-500">
                     <div class="absolute inset-0 z-0">
-                        <!-- Ilustracja: Prototypowanie -->
-                        <img src="img/prototype.png"
+                        <img src="../img/prototype.png"
                             class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
-                            alt="Prototypowanie">
+                            alt="Prototyping">
                     </div>
                     <div class="relative z-10">
-                        <span class="text-xs font-mono text-blue-400 mb-2 block">SZYBKI TEST</span>
+                        <span class="text-xs font-mono text-blue-400 mb-2 block">QUICK TEST</span>
                         <h3 class="text-2xl font-heading text-white mb-2">Rapid Prototyping</h3>
                         <p
                             class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                            Masz pomysł na zmianę w firmie? Nie piszmy specyfikacji na 100 stron. Zbudujmy działający
-                            prototyp w 3 dni i sprawdźmy, czy to ma sens.
+                            Have an idea for change? Let's skip the 100-page specification. Build a working prototype in
+                            3 days and see if it makes sense.
                         </p>
                     </div>
                 </div>
@@ -387,37 +380,36 @@
                 <!-- Use Case 3 -->
                 <div class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer">
                     <div class="absolute inset-0 z-0">
-                        <!-- Ilustracja: Wsparcie -->
-                        <img src="img/support.png"
+                        <img src="../img/support.png"
                             class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
-                            alt="Wsparcie i pomoc">
+                            alt="Support">
                     </div>
                     <div class="relative z-10">
-                        <span class="text-xs font-mono text-blue-400 mb-2 block">ODCIĄŻENIE LUDZI</span>
-                        <h3 class="text-2xl font-heading text-white mb-2">Wsparcie Procesu</h3>
+                        <span class="text-xs font-mono text-blue-400 mb-2 block">RELIEVING PEOPLE</span>
+                        <h3 class="text-2xl font-heading text-white mb-2">Process Support</h3>
                         <p
                             class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                            Ludzie nie nadążają? Nie wymieniajmy ich. Dajmy im narzędzie AI, które przejmie nudną,
-                            powtarzalną część pracy, żeby oni mogli myśleć.
+                            People can't keep up? Don't replace them. Give them an AI tool that takes over the boring,
+                            repetitive work so they can think.
                         </p>
                     </div>
                 </div>
 
-                <!-- Use Case 4: RAG / Baza Wiedzy -->
+                <!-- Use Case 4: RAG -->
                 <div
                     class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer border-t-2 border-t-purple-500">
                     <div class="absolute inset-0 z-0">
-                        <img src="img/rag.png"
+                        <img src="../img/rag.png"
                             class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
-                            alt="Baza wiedzy AI">
+                            alt="Knowledge Base AI">
                     </div>
                     <div class="relative z-10">
-                        <span class="text-xs font-mono text-purple-400 mb-2 block">TWOJA WIEDZA, TWOJE AI</span>
-                        <h3 class="text-2xl font-heading text-white mb-2">Baza Wiedzy (RAG)</h3>
+                        <span class="text-xs font-mono text-purple-400 mb-2 block">YOUR KNOWLEDGE, YOUR AI</span>
+                        <h3 class="text-2xl font-heading text-white mb-2">Knowledge Base (RAG)</h3>
                         <p
                             class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                            Setki dokumentów, procedur, regulaminów? AI przeczyta je wszystkie i odpowie na pytania
-                            Twoich pracowników. Jakby cała firma miała jedną wspólną pamięć.
+                            Hundreds of documents, procedures, regulations? AI reads them all and answers your
+                            employees' questions. As if the whole company shared one memory.
                         </p>
                     </div>
                 </div>
@@ -425,18 +417,17 @@
                 <!-- Use Case 5: Voicebot -->
                 <div class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer">
                     <div class="absolute inset-0 z-0">
-                        <img src="img/voicebot.png"
+                        <img src="../img/voicebot.png"
                             class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
                             alt="Voicebot AI">
                     </div>
                     <div class="relative z-10">
-                        <span class="text-xs font-mono text-orange-400 mb-2 block">GŁOS, KTÓRY NIE MĘCZY</span>
+                        <span class="text-xs font-mono text-orange-400 mb-2 block">VOICE THAT DOESN'T TIRE</span>
                         <h3 class="text-2xl font-heading text-white mb-2">Voicebot</h3>
                         <p
                             class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                            Naturalny głos AI – nie do odróżnienia od człowieka. Zadzwoni do tysięcy klientów,
-                            przeprowadzi rozmowę, zbierze informacje. Kampania, która kiedyś trwała tydzień, teraz trwa
-                            godzinę.
+                            Natural AI voice – indistinguishable from human. Calls thousands of clients, conducts
+                            conversations, gathers info. A campaign that took a week now takes an hour.
                         </p>
                     </div>
                 </div>
@@ -445,17 +436,17 @@
                 <div
                     class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer border-t-2 border-t-green-500">
                     <div class="absolute inset-0 z-0">
-                        <img src="img/agent.png"
+                        <img src="../img/agent.png"
                             class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
-                            alt="Agent AI">
+                            alt="AI Agent">
                     </div>
                     <div class="relative z-10">
-                        <span class="text-xs font-mono text-green-400 mb-2 block">DZIAŁA SAM</span>
-                        <h3 class="text-2xl font-heading text-white mb-2">Agent AI</h3>
+                        <span class="text-xs font-mono text-green-400 mb-2 block">WORKS AUTONOMOUSLY</span>
+                        <h3 class="text-2xl font-heading text-white mb-2">AI Agent</h3>
                         <p
                             class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                            Zlecasz cel – agent rozbija go na zadania i wykonuje sam. Rezerwuje, wysyła, sprawdza,
-                            raportuje. Ty tylko zatwierdzasz wynik.
+                            You assign a goal – the agent breaks it into tasks and executes them. Books, sends, checks,
+                            reports. You just approve the result.
                         </p>
                     </div>
                 </div>
@@ -464,18 +455,17 @@
                 <div
                     class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer border-t-2 border-t-cyan-500">
                     <div class="absolute inset-0 z-0">
-                        <img src="img/local-llm.png"
+                        <img src="../img/local-llm.png"
                             class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
-                            alt="Lokalne AI">
+                            alt="Local AI">
                     </div>
                     <div class="relative z-10">
-                        <span class="text-xs font-mono text-cyan-400 mb-2 block">BEZ CHMURY, BEZ OPŁAT</span>
-                        <h3 class="text-2xl font-heading text-white mb-2">Lokalne AI (LLM)</h3>
+                        <span class="text-xs font-mono text-cyan-400 mb-2 block">NO CLOUD, NO FEES</span>
+                        <h3 class="text-2xl font-heading text-white mb-2">Local AI (LLM)</h3>
                         <p
                             class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                            Twoje dane nie opuszczają firmy. Darmowy model AI działa na Twoim serwerze – bez
-                            subskrypcji,
-                            bez limitów, bez ryzyka wycieku. Pełna kontrola i prywatność.
+                            Your data never leaves your company. Free AI model runs on your server – no subscription, no
+                            limits, no leak risks. Full control and privacy.
                         </p>
                     </div>
                 </div>
@@ -483,62 +473,64 @@
         </div>
     </section>
 
-    <!-- Contact / Qualification Section -->
-    <section id="kontakt" class="py-32 relative z-10">
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 relative z-10">
         <div class="max-w-3xl mx-auto px-6 text-center">
 
             <h2 class="text-4xl md:text-5xl font-heading font-light text-white mb-8">
-                Opowiedz mi o tym.<br> <span class="font-bold">Bez zobowiązań.</span>
+                Tell me about it.<br> <span class="font-bold">No strings attached.</span>
             </h2>
             <p class="text-lg text-gray-400 mb-12 font-light leading-relaxed">
-                Jeśli czujesz, że Twój zespół tonie, a procesy w firmie są przestarzałe – napisz. <br />
-                Nie obiecuję cudów, ale obiecuję szczerość. Jeśli zobaczę, że mogę pomóc "od ręki" moim doświadczeniem i
-                AI – zrobię to, żeby udowodnić, że zmiana nie musi boleć.
+                If you feel your team is drowning and company processes are outdated – write. <br />
+                I don't promise miracles, but I promise honesty. If I see I can help "right away" with my experience and
+                AI – I'll do it to prove that change doesn't have to hurt.
             </p>
-            <!-- Formularz kontaktowy z obsługą AJAX -->
+
+            <!-- Contact form with AJAX -->
             <form id="contact-form" action="https://formspree.io/f/mqeznaor" method="POST"
                 class="text-left relative overflow-hidden p-8 md:p-12 rounded-2xl backdrop-blur-sm"
                 style="background: linear-gradient(135deg, rgba(30,58,138,0.15) 0%, rgba(5,6,8,0.95) 50%, rgba(127,29,29,0.1) 100%); border: 1px solid rgba(59,130,246,0.2);">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                     <div class="group">
-                        <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Twój Email</label>
+                        <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Your Email</label>
                         <input type="email" name="email" required
                             class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors"
-                            placeholder="adres@firma.pl">
+                            placeholder="email@company.com">
                     </div>
                     <div class="group">
-                        <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Numer telefonu <span
-                                class="text-gray-600">(opcjonalnie)</span></label>
+                        <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Phone Number <span
+                                class="text-gray-600">(optional)</span></label>
                         <input type="tel" name="phone"
                             class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors"
-                            placeholder="+48 123 456 789">
+                            placeholder="+1 234 567 890">
                     </div>
                 </div>
 
                 <div class="group mb-8">
-                    <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Co Cię męczy?</label>
+                    <label class="block text-xs font-mono text-gray-500 uppercase mb-2">What's troubling you?</label>
                     <select name="problem_type"
                         class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors">
-                        <option value="overload">Ludzie nie wyrabiają się z pracą</option>
-                        <option value="chaos">Toniemy w papierach/mailach</option>
-                        <option value="prototype">Chcę sprawdzić pomysł (Prototyp)</option>
-                        <option value="talk">Porozmawiajmy o kierunku zmian</option>
+                        <option value="overload">People can't keep up with work</option>
+                        <option value="chaos">Drowning in papers/emails</option>
+                        <option value="prototype">Want to test an idea (Prototype)</option>
+                        <option value="talk">Let's discuss the direction of change</option>
                     </select>
                 </div>
 
                 <div class="group mb-8">
-                    <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Opisz problem (Use Case)</label>
+                    <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Describe the problem (Use
+                        Case)</label>
                     <textarea name="message" required
                         class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors h-40 resize-none"
-                        placeholder="Co sprawia największy ból? Gdzie tracicie czas? Pisz szczerze, to zostaje między nami."></textarea>
+                        placeholder="What causes the biggest pain? Where do you lose time? Be honest, this stays between us."></textarea>
                 </div>
 
-                <!-- Honeypot - ukryte pole antyspamowe -->
+                <!-- Honeypot -->
                 <input type="text" name="_gotcha" style="display:none">
 
                 <button type="submit" id="submit-btn"
                     class="w-full py-5 bg-white hover:bg-gray-200 text-black font-heading font-bold text-lg uppercase tracking-widest transition-colors duration-300 flex justify-center items-center gap-3">
-                    <span id="btn-text">Wyślij do Analizy</span>
+                    <span id="btn-text">Send for Analysis</span>
                     <i class="fa-solid fa-hand-holding-heart text-sm" id="btn-icon"></i>
                     <svg id="btn-spinner" class="hidden animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 24 24">
@@ -551,23 +543,23 @@
                 </button>
 
                 <p class="mt-6 text-xs text-center text-gray-600 font-mono">
-                    Po weryfikacji zgłoszenia skontaktuję się osobiście – mailowo lub telefonicznie.
+                    After reviewing your submission, I'll contact you personally – via email or phone.
                 </p>
             </form>
 
-            <!-- Komunikat sukcesu (ukryty domyślnie) -->
+            <!-- Success message -->
             <div id="success-message" class="hidden text-center p-8 md:p-12 rounded-2xl"
                 style="background: linear-gradient(135deg, rgba(34,197,94,0.15) 0%, rgba(5,6,8,0.95) 50%, rgba(30,58,138,0.1) 100%); border: 1px solid rgba(34,197,94,0.3);">
                 <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-green-500/20 flex items-center justify-center">
                     <i class="fa-solid fa-check text-green-400 text-3xl"></i>
                 </div>
-                <h3 class="text-2xl font-heading text-white mb-4">Dziękuję za zgłoszenie!</h3>
+                <h3 class="text-2xl font-heading text-white mb-4">Thank you for reaching out!</h3>
                 <p class="text-gray-400 mb-6">
-                    Twoja wiadomość dotarła. Przeanalizuję Twój przypadek i skontaktuję się z Tobą osobiście
-                    <br>– mailowo lub telefonicznie.
+                    Your message has arrived. I'll analyze your case and contact you personally
+                    <br>– via email or phone.
                 </p>
                 <p class="text-xs text-gray-600 font-mono">
-                    Zazwyczaj odpowiadam w ciągu 24-48 godzin.
+                    I usually respond within 24-48 hours.
                 </p>
             </div>
         </div>
@@ -577,7 +569,6 @@
     <script>
         document.getElementById('contact-form').addEventListener('submit', async function (e) {
             e.preventDefault();
-
             const form = this;
             const submitBtn = document.getElementById('submit-btn');
             const btnText = document.getElementById('btn-text');
@@ -585,8 +576,7 @@
             const btnSpinner = document.getElementById('btn-spinner');
             const successMessage = document.getElementById('success-message');
 
-            // Show loading state
-            btnText.textContent = 'Wysyłanie...';
+            btnText.textContent = 'Sending...';
             btnIcon.classList.add('hidden');
             btnSpinner.classList.remove('hidden');
             submitBtn.disabled = true;
@@ -595,90 +585,59 @@
                 const response = await fetch(form.action, {
                     method: 'POST',
                     body: new FormData(form),
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    headers: { 'Accept': 'application/json' }
                 });
-
                 if (response.ok) {
-                    // Hide form, show success message
                     form.classList.add('hidden');
                     successMessage.classList.remove('hidden');
                 } else {
-                    throw new Error('Błąd wysyłania');
+                    throw new Error('Error sending');
                 }
             } catch (error) {
-                // Reset button on error
-                btnText.textContent = 'Spróbuj ponownie';
+                btnText.textContent = 'Try Again';
                 btnIcon.classList.remove('hidden');
                 btnSpinner.classList.add('hidden');
                 submitBtn.disabled = false;
-                alert('Wystąpił błąd. Spróbuj ponownie lub napisz bezpośrednio na email.');
+                alert('An error occurred. Please try again or email directly.');
             }
         });
     </script>
 
     <footer class="border-t border-white/5 py-12 bg-black text-center">
         <div class="text-xs font-mono text-gray-600 uppercase tracking-widest">
-            &copy; 2024 AI Process Architect. Po stronie człowieka.
+            &copy; 2024 AI Process Architect. On the human side.
         </div>
     </footer>
 
-    <!-- Three.js Script remains the same (Subtle dots) -->
+    <!-- Three.js Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('canvas-container');
             const scene = new THREE.Scene();
             scene.fog = new THREE.FogExp2(0x050608, 0.001);
-
             const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
             camera.position.z = 150;
-
             const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
             container.appendChild(renderer.domElement);
 
-            // Particles logic
             const particlesCount = 200;
             const particlesData = [];
             const r = 600;
             const rHalf = r / 2;
-
             const geometry = new THREE.BufferGeometry();
             const particlePositions = new Float32Array(particlesCount * 3);
 
             for (let i = 0; i < particlesCount; i++) {
-                const x = Math.random() * r - rHalf;
-                const y = Math.random() * r - rHalf;
-                const z = Math.random() * r - rHalf;
-
-                particlePositions[i * 3] = x;
-                particlePositions[i * 3 + 1] = y;
-                particlePositions[i * 3 + 2] = z;
-
-                particlesData.push({
-                    velocity: new THREE.Vector3(
-                        -0.2 + Math.random() * 0.4,
-                        -0.2 + Math.random() * 0.4,
-                        -0.2 + Math.random() * 0.4
-                    ),
-                    numConnections: 0
-                });
+                particlePositions[i * 3] = Math.random() * r - rHalf;
+                particlePositions[i * 3 + 1] = Math.random() * r - rHalf;
+                particlePositions[i * 3 + 2] = Math.random() * r - rHalf;
+                particlesData.push({ velocity: new THREE.Vector3(-0.2 + Math.random() * 0.4, -0.2 + Math.random() * 0.4, -0.2 + Math.random() * 0.4), numConnections: 0 });
             }
 
             geometry.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3).setUsage(THREE.DynamicDrawUsage));
-
-            // Ice Blue / White - clear, clean, honest
-            const pMaterial = new THREE.PointsMaterial({
-                color: 0xe2e8f0,
-                size: 2,
-                blending: THREE.AdditiveBlending,
-                transparent: true,
-                opacity: 0.5,
-                sizeAttenuation: false
-            });
-
+            const pMaterial = new THREE.PointsMaterial({ color: 0xe2e8f0, size: 2, blending: THREE.AdditiveBlending, transparent: true, opacity: 0.5, sizeAttenuation: false });
             const particles = new THREE.Points(geometry, pMaterial);
             scene.add(particles);
 
@@ -686,92 +645,55 @@
             const maxConnections = particlesCount * particlesCount;
             const linePositions = new Float32Array(maxConnections * 3);
             const lineColors = new Float32Array(maxConnections * 3);
-
             lineGeometry.setAttribute('position', new THREE.BufferAttribute(linePositions, 3).setUsage(THREE.DynamicDrawUsage));
             lineGeometry.setAttribute('color', new THREE.BufferAttribute(lineColors, 3).setUsage(THREE.DynamicDrawUsage));
-
-            const lMaterial = new THREE.LineBasicMaterial({
-                vertexColors: true,
-                blending: THREE.AdditiveBlending,
-                transparent: true,
-                opacity: 0.3
-            });
-
+            const lMaterial = new THREE.LineBasicMaterial({ vertexColors: true, blending: THREE.AdditiveBlending, transparent: true, opacity: 0.3 });
             const lines = new THREE.LineSegments(lineGeometry, lMaterial);
             scene.add(lines);
 
             function animate() {
                 requestAnimationFrame(animate);
-
-                let vertexpos = 0;
-                let colorpos = 0;
-                let numConnected = 0;
-
+                let vertexpos = 0, colorpos = 0, numConnected = 0;
                 for (let i = 0; i < particlesCount; i++) particlesData[i].numConnections = 0;
 
                 for (let i = 0; i < particlesCount; i++) {
-                    const particleData = particlesData[i];
-
-                    particlePositions[i * 3] += particleData.velocity.x * 0.5;
-                    particlePositions[i * 3 + 1] += particleData.velocity.y * 0.5;
-                    particlePositions[i * 3 + 2] += particleData.velocity.z * 0.5;
-
-                    if (particlePositions[i * 3] < -rHalf || particlePositions[i * 3] > rHalf) particleData.velocity.x = -particleData.velocity.x;
-                    if (particlePositions[i * 3 + 1] < -rHalf || particlePositions[i * 3 + 1] > rHalf) particleData.velocity.y = -particleData.velocity.y;
-                    if (particlePositions[i * 3 + 2] < -rHalf || particlePositions[i * 3 + 2] > rHalf) particleData.velocity.z = -particleData.velocity.z;
+                    const pd = particlesData[i];
+                    particlePositions[i * 3] += pd.velocity.x * 0.5;
+                    particlePositions[i * 3 + 1] += pd.velocity.y * 0.5;
+                    particlePositions[i * 3 + 2] += pd.velocity.z * 0.5;
+                    if (particlePositions[i * 3] < -rHalf || particlePositions[i * 3] > rHalf) pd.velocity.x = -pd.velocity.x;
+                    if (particlePositions[i * 3 + 1] < -rHalf || particlePositions[i * 3 + 1] > rHalf) pd.velocity.y = -pd.velocity.y;
+                    if (particlePositions[i * 3 + 2] < -rHalf || particlePositions[i * 3 + 2] > rHalf) pd.velocity.z = -pd.velocity.z;
 
                     for (let j = i + 1; j < particlesCount; j++) {
-                        const particleDataB = particlesData[j];
                         const dx = particlePositions[i * 3] - particlePositions[j * 3];
                         const dy = particlePositions[i * 3 + 1] - particlePositions[j * 3 + 1];
                         const dz = particlePositions[i * 3 + 2] - particlePositions[j * 3 + 2];
                         const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
-
                         if (dist < 130) {
-                            particleData.numConnections++;
-                            particleDataB.numConnections++;
                             const alpha = 1.0 - dist / 130;
-
                             linePositions[vertexpos++] = particlePositions[i * 3];
                             linePositions[vertexpos++] = particlePositions[i * 3 + 1];
                             linePositions[vertexpos++] = particlePositions[i * 3 + 2];
-
                             linePositions[vertexpos++] = particlePositions[j * 3];
                             linePositions[vertexpos++] = particlePositions[j * 3 + 1];
                             linePositions[vertexpos++] = particlePositions[j * 3 + 2];
-
-                            // Subtle Blueish-White Lines
-                            lineColors[colorpos++] = 0.8 * alpha;
-                            lineColors[colorpos++] = 0.9 * alpha;
-                            lineColors[colorpos++] = 1.0 * alpha;
-
-                            lineColors[colorpos++] = 0.8 * alpha;
-                            lineColors[colorpos++] = 0.9 * alpha;
-                            lineColors[colorpos++] = 1.0 * alpha;
-
+                            lineColors[colorpos++] = 0.8 * alpha; lineColors[colorpos++] = 0.9 * alpha; lineColors[colorpos++] = 1.0 * alpha;
+                            lineColors[colorpos++] = 0.8 * alpha; lineColors[colorpos++] = 0.9 * alpha; lineColors[colorpos++] = 1.0 * alpha;
                             numConnected++;
                         }
                     }
                 }
-
                 lines.geometry.setDrawRange(0, numConnected * 2);
                 lines.geometry.attributes.position.needsUpdate = true;
                 lines.geometry.attributes.color.needsUpdate = true;
                 particles.geometry.attributes.position.needsUpdate = true;
-
                 particles.rotation.y += 0.0003;
                 lines.rotation.y += 0.0003;
-
                 renderer.render(scene, camera);
             }
-
             animate();
-
-            window.addEventListener('resize', () => {
-                camera.aspect = window.innerWidth / window.innerHeight;
-                camera.updateProjectionMatrix();
-                renderer.setSize(window.innerWidth, window.innerHeight);
-            });
+            window.addEventListener('resize', () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); });
         });
     </script>
 </body>
