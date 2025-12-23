@@ -1,0 +1,11 @@
+# robots.txt for Studio.AI
+# https://studio-ai.pl
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://studio-ai.pl/sitemap.xml
+
+# Crawl delay (optional, helps servers)
+Crawl-delay: 1

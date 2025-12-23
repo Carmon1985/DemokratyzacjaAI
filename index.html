@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Studio.AI | Pragmatyczne wdrożenia AI dla firm - Konsultant z 20-letnim doświadczeniem</title>
+    <meta name="description"
+        content="Zmęczony korporacyjnymi wdrożeniami? Pomagam firmom wprowadzać AI bez wielkich budżetów IT. Lekkie rozwiązania, szybkie prototypy, realne efekty. 20 lat doświadczenia w transformacji cyfrowej.">
+    <meta name="keywords"
+        content="konsultant AI, wdrożenia AI, automatyzacja procesów, sztuczna inteligencja dla firm, transformacja cyfrowa, prototypowanie AI, asystent AI, optymalizacja procesów biznesowych">
+    <meta name="author" content="Studio.AI">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://studio-ai.pl/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studio-ai.pl/">
+    <meta property="og:title" content="Studio.AI | Pragmatyczne wdrożenia AI dla firm">
+    <meta property="og:description"
+        content="Pomagam firmom wprowadzać AI bez wielkich budżetów IT. Lekkie rozwiązania, szybkie prototypy, realne efekty. 20 lat doświadczenia.">
+    <meta property="og:image" content="https://studio-ai.pl/img/og-image.png">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Studio.AI">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://studio-ai.pl/">
+    <meta name="twitter:title" content="Studio.AI | Pragmatyczne wdrożenia AI dla firm">
+    <meta name="twitter:description"
+        content="Pomagam firmom wprowadzać AI bez wielkich budżetów IT. Lekkie rozwiązania, szybkie prototypy, realne efekty.">
+    <meta name="twitter:image" content="https://studio-ai.pl/img/og-image.png">
+
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Studio.AI",
+        "description": "Pragmatyczne wdrożenia AI dla firm. Konsultant z 20-letnim doświadczeniem w transformacji cyfrowej.",
+        "url": "https://studio-ai.pl",
+        "logo": "https://studio-ai.pl/img/logo.png",
+        "sameAs": [],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "PL"
+        },
+        "priceRange": "$$",
+        "areaServed": "PL",
+        "serviceType": ["Konsulting AI", "Automatyzacja procesów", "Prototypowanie", "Wdrożenia sztucznej inteligencji"],
+        "knowsAbout": ["Artificial Intelligence", "Process Automation", "Digital Transformation", "Rapid Prototyping"]
+    }
+    </script>
+
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Favicon (dodaj własne pliki) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050608;
+            color: #f1f5f9;
+            overflow-x: hidden;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* 3D Canvas Background */
+        #canvas-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Premium Glassmorphism */
+        .glass-panel {
+            background: rgba(5, 6, 8, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .premium-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .premium-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.04);
+            transform: translateY(-5px);
+        }
+
+        /* Typography Polish */
+        .tracking-premium {
+            letter-spacing: 0.2em;
+        }
+
+        /* The Interface Button */
+        .cta-interface {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 6px 6px 24px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 9999px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-interface:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .cta-icon-circle {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #fff;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 16px;
+            transition: transform 0.4s ease;
+        }
+
+        .cta-interface:hover .cta-icon-circle {
+            transform: rotate(45deg);
+        }
+
+        /* Inspiration Image Hover */
+        .inspire-img {
+            transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .premium-card:hover .inspire-img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 3D Background Container -->
+    <div id="canvas-container"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex items-center gap-3 cursor-pointer group" onclick="window.scrollTo(0,0)">
+                    <div class="w-2 h-2 bg-white rounded-full group-hover:bg-blue-400 transition-colors duration-500">
+                    </div>
+                    <span class="font-heading font-light text-xl tracking-widest text-white uppercase">Studio<strong
+                            class="font-bold text-white">.AI</strong></span>
+                </div>
+
+                <div
+                    class="hidden md:flex items-center space-x-12 text-xs font-medium tracking-premium uppercase text-gray-400">
+                    <a href="#doswiadczenie" class="hover:text-white transition-colors duration-300">Moja droga</a>
+                    <a href="#usecases" class="hover:text-white transition-colors duration-300">Jak pomagam</a>
+                    <a href="#kontakt"
+                        class="text-white border border-white/20 px-6 py-2 rounded-full hover:bg-white hover:text-black transition-all">
+                        Porozmawiajmy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20">
+        <div class="max-w-5xl mx-auto relative z-10 text-center">
+
+            <div class="inline-block mb-8">
+                <span
+                    class="text-xs font-mono text-blue-400 tracking-widest uppercase border border-blue-500/30 bg-blue-500/10 px-3 py-1 rounded">20
+                    Lat Doświadczenia</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-heading font-light text-white mb-8 leading-[1.1]">
+                Trafia mnie <span class="font-bold relative inline-block text-white">szlag<span
+                        class="absolute bottom-2 left-0 w-full h-3 bg-red-600/60 -z-10 transform -rotate-2"></span></span>.
+            </h1>
+
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                Świat AI pędzi, a my toniemy w starych procedurach. Ludzie po prostu nie nadążają.<br />
+                Zmęczyłem się budowaniem wielkich systemów w korporacjach.
+                Teraz chcę Ci pomóc <strong class="text-white font-medium">odnaleźć się w tym chaosie</strong>. Bez
+                stawiania "produkcyjnych kobył". Po prostu ułatwiając pracę.
+            </p>
+
+            <p class="text-sm text-gray-500 mb-12 max-w-2xl mx-auto font-mono">
+                [ZASADA WSPÓŁPRACY] Szukam sensu, nie faktur. Jeśli masz problem, który Cię przytłacza – opisz go. Jeśli
+                uznam, że mogę realnie pomóc – <span class="text-white border-b border-gray-600">zrobię to pro
+                    bono</span>, by sprawdzić siłę prostych rozwiązań.
+            </p>
+
+            <a href="#kontakt" class="cta-interface group mx-auto">
+                <div class="text-left">
+                    <span class="block text-xs text-gray-500 uppercase tracking-widest">Potrzebuję wsparcia</span>
+                    <span class="block text-lg font-heading text-white">Opisz swój problem</span>
+                </div>
+                <div class="cta-icon-circle">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="absolute bottom-12 w-full text-center">
+            <p class="text-xs text-gray-600 font-mono uppercase tracking-widest opacity-60">Mentor • Facilitator •
+                Pragmatyk</p>
+        </div>
+    </section>
+
+    <!-- Experience Section (Human & Tired approach) -->
+    <section id="doswiadczenie" class="py-32 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+                <!-- Text Narrative -->
+                <div>
+                    <span class="text-gray-500 font-mono text-xs tracking-widest mb-4 block">/// KONTEKST</span>
+                    <h2 class="text-4xl md:text-5xl font-heading font-light text-white mb-10 leading-tight">
+                        Zmęczył mnie wyścig.<br>
+                        <span class="font-bold">Chcę sensownych zmian.</span>
+                    </h2>
+
+                    <div class="space-y-6 text-gray-400 text-lg font-light">
+                        <p>
+                            Spędziłem 20 lat w korporacjach. Widziałem projekty za miliony, które nikomu nie pomagały.
+                            Widziałem ludzi wypalonych przez procedury, podczas gdy technologia miała ich odciążyć.
+                        </p>
+                        <p class="text-white text-xl border-l-2 border-blue-500 pl-6 py-2 my-8">
+                            "AI to nie kolejna maszyna do wdrożenia. To szansa, żebyśmy w końcu przestali robić rzeczy,
+                            których nienawidzimy."
+                        </p>
+                        <p>
+                            Nie chcę budować Ci kolejnego ciężkiego systemu ("kobyły"), którego nikt nie będzie używał.
+                            Chcę wejść w Twój proces, zobaczyć gdzie ludzie nie nadążają i użyć AI punktowo – tam, gdzie
+                            przyniesie to ulgę i spokój.
+                        </p>
+                    </div>
+
+                    <div class="mt-10 flex gap-4">
+                        <span
+                            class="px-4 py-2 border border-white/10 rounded-lg text-sm text-gray-400">#LudzkiePodejście</span>
+                        <span
+                            class="px-4 py-2 border border-white/10 rounded-lg text-sm text-gray-400">#Pragmatyzm</span>
+                    </div>
+                </div>
+
+                <!-- Visual Statistic / Authority -->
+                <div class="relative">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 blur-xl opacity-50">
+                    </div>
+                    <div class="premium-card p-12 relative bg-black/80">
+                        <h3 class="text-xs font-mono text-gray-500 uppercase mb-8">Moja Filozofia</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-8 h-8 rounded bg-blue-900/30 flex items-center justify-center text-blue-400 font-bold mt-1">
+                                    1</div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg">Zrozumieć Człowieka</h4>
+                                    <p class="text-sm text-gray-500">Zanim dotknę technologii, chcę wiedzieć, co męczy
+                                        Twoich ludzi.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-8 h-8 rounded bg-blue-900/30 flex items-center justify-center text-blue-400 font-bold mt-1">
+                                    2</div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg">Lekkie Rozwiązania</h4>
+                                    <p class="text-sm text-gray-500">Unikam wielkich wdrożeń. Szukam małych
+                                        automatyzacji, które dają duży efekt.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-8 h-8 rounded bg-blue-900/30 flex items-center justify-center text-blue-400 font-bold mt-1">
+                                    3</div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg">Wsparcie w Procesie</h4>
+                                    <p class="text-sm text-gray-500">AI ma być asystentem, który zdejmuje ciężar, a nie
+                                        szefem, który dokłada pracy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspirations / Use Cases Section -->
+    <section id="usecases" class="py-32 relative z-10 bg-white/[0.02]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 flex flex-col md:flex-row justify-between items-end">
+                <div>
+                    <h2 class="text-4xl font-heading text-white mb-4">Gdzie mogę pomóc?</h2>
+                    <p class="text-gray-500 max-w-xl">
+                        Oto przykłady problemów, które rozwiązuję "lekko", bez wielkich budżetów IT.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Use Case 1 -->
+                <div class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer">
+                    <div class="absolute inset-0 z-0">
+                        <!-- Ilustracja: Chaos dokumentów -->
+                        <img src="img/chaos.png"
+                            class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
+                            alt="Chaos dokumentów">
+                    </div>
+                    <div class="relative z-10">
+                        <span class="text-xs font-mono text-blue-400 mb-2 block">UJARZMIENIE CHAOSU</span>
+                        <h3 class="text-2xl font-heading text-white mb-2">Inteligentny Asystent</h3>
+                        <p
+                            class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                            Masz dość przekopywania się przez tysiące maili i dokumentów? Wdróżmy proste AI, które
+                            "przeczyta" to za Ciebie i wyciągnie wnioski.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Use Case 2 -->
+                <div
+                    class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer border-t-2 border-t-blue-500">
+                    <div class="absolute inset-0 z-0">
+                        <!-- Ilustracja: Prototypowanie -->
+                        <img src="img/prototype.png"
+                            class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
+                            alt="Prototypowanie">
+                    </div>
+                    <div class="relative z-10">
+                        <span class="text-xs font-mono text-blue-400 mb-2 block">SZYBKI TEST</span>
+                        <h3 class="text-2xl font-heading text-white mb-2">Rapid Prototyping</h3>
+                        <p
+                            class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                            Masz pomysł na zmianę w firmie? Nie piszmy specyfikacji na 100 stron. Zbudujmy działający
+                            prototyp w 3 dni i sprawdźmy, czy to ma sens.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Use Case 3 -->
+                <div class="premium-card group h-[400px] flex flex-col justify-end p-8 cursor-pointer">
+                    <div class="absolute inset-0 z-0">
+                        <!-- Ilustracja: Wsparcie -->
+                        <img src="img/support.png"
+                            class="w-full h-full object-cover opacity-50 group-hover:opacity-70 inspire-img transition-opacity duration-500"
+                            alt="Wsparcie i pomoc">
+                    </div>
+                    <div class="relative z-10">
+                        <span class="text-xs font-mono text-blue-400 mb-2 block">ODCIĄŻENIE LUDZI</span>
+                        <h3 class="text-2xl font-heading text-white mb-2">Wsparcie Procesu</h3>
+                        <p
+                            class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                            Ludzie nie nadążają? Nie wymieniajmy ich. Dajmy im narzędzie AI, które przejmie nudną,
+                            powtarzalną część pracy, żeby oni mogli myśleć.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Qualification Section -->
+    <section id="kontakt" class="py-32 relative z-10">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl md:text-5xl font-heading font-light text-white mb-8">
+                Opowiedz mi o tym.<br> <span class="font-bold">Bez zobowiązań.</span>
+            </h2>
+            <p class="text-lg text-gray-400 mb-12 font-light leading-relaxed">
+                Jeśli czujesz, że Twój zespół tonie, a procesy w firmie są przestarzałe – napisz. <br />
+                Nie obiecuję cudów, ale obiecuję szczerość. Jeśli zobaczę, że mogę pomóc "od ręki" moim doświadczeniem i
+                AI – zrobię to, żeby udowodnić, że zmiana nie musi boleć.
+            </p>
+
+            <!-- INSTRUKCJA: Zamień TWOJ_FORMSPREE_ID na swój ID z formspree.io -->
+            <!-- 1. Wejdź na https://formspree.io i załóż darmowe konto -->
+            <!-- 2. Stwórz nowy formularz i skopiuj ID (np. xyzabcde) -->
+            <!-- 3. Wklej ID poniżej zamiast TWOJ_FORMSPREE_ID -->
+            <form action="https://formspree.io/f/TWOJ_FORMSPREE_ID" method="POST"
+                class="text-left bg-white/[0.03] border border-white/5 p-8 md:p-12 rounded-2xl backdrop-blur-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="group">
+                        <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Twój Email</label>
+                        <input type="email" name="email" required
+                            class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors"
+                            placeholder="adres@firma.pl">
+                    </div>
+                    <div class="group">
+                        <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Co Cię męczy?</label>
+                        <select name="problem_type"
+                            class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors">
+                            <option value="overload">Ludzie nie wyrabiają się z pracą</option>
+                            <option value="chaos">Toniemy w papierach/mailach</option>
+                            <option value="prototype">Chcę sprawdzić pomysł (Prototyp)</option>
+                            <option value="talk">Po prostu pogadać o zmianie</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="group mb-8">
+                    <label class="block text-xs font-mono text-gray-500 uppercase mb-2">Opisz problem (Use Case)</label>
+                    <textarea name="message" required
+                        class="w-full bg-black/40 border border-gray-700 py-3 px-4 text-white rounded focus:outline-none focus:border-blue-500 transition-colors h-40 resize-none"
+                        placeholder="Co sprawia największy ból? Gdzie tracicie czas? Pisz szczerze, to zostaje między nami."></textarea>
+                </div>
+
+                <!-- Honeypot - ukryte pole antyspamowe -->
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit"
+                    class="w-full py-5 bg-white hover:bg-gray-200 text-black font-heading font-bold text-lg uppercase tracking-widest transition-colors duration-300 flex justify-center items-center gap-3">
+                    Wyślij do Analizy
+                    <i class="fa-solid fa-hand-holding-heart text-sm"></i>
+                </button>
+
+                <p class="mt-6 text-xs text-center text-gray-600 font-mono">
+                    *Odpisuję osobiście na wybrane, ciekawe przypadki.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/5 py-12 bg-black text-center">
+        <div class="text-xs font-mono text-gray-600 uppercase tracking-widest">
+            &copy; 2024 AI Process Architect. Po stronie człowieka.
+        </div>
+    </footer>
+
+    <!-- Three.js Script remains the same (Subtle dots) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('canvas-container');
+            const scene = new THREE.Scene();
+            scene.fog = new THREE.FogExp2(0x050608, 0.001);
+
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+            camera.position.z = 150;
+
+            const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            container.appendChild(renderer.domElement);
+
+            // Particles logic
+            const particlesCount = 200;
+            const particlesData = [];
+            const r = 600;
+            const rHalf = r / 2;
+
+            const geometry = new THREE.BufferGeometry();
+            const particlePositions = new Float32Array(particlesCount * 3);
+
+            for (let i = 0; i < particlesCount; i++) {
+                const x = Math.random() * r - rHalf;
+                const y = Math.random() * r - rHalf;
+                const z = Math.random() * r - rHalf;
+
+                particlePositions[i * 3] = x;
+                particlePositions[i * 3 + 1] = y;
+                particlePositions[i * 3 + 2] = z;
+
+                particlesData.push({
+                    velocity: new THREE.Vector3(
+                        -0.2 + Math.random() * 0.4,
+                        -0.2 + Math.random() * 0.4,
+                        -0.2 + Math.random() * 0.4
+                    ),
+                    numConnections: 0
+                });
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3).setUsage(THREE.DynamicDrawUsage));
+
+            // Ice Blue / White - clear, clean, honest
+            const pMaterial = new THREE.PointsMaterial({
+                color: 0xe2e8f0,
+                size: 2,
+                blending: THREE.AdditiveBlending,
+                transparent: true,
+                opacity: 0.5,
+                sizeAttenuation: false
+            });
+
+            const particles = new THREE.Points(geometry, pMaterial);
+            scene.add(particles);
+
+            const lineGeometry = new THREE.BufferGeometry();
+            const maxConnections = particlesCount * particlesCount;
+            const linePositions = new Float32Array(maxConnections * 3);
+            const lineColors = new Float32Array(maxConnections * 3);
+
+            lineGeometry.setAttribute('position', new THREE.BufferAttribute(linePositions, 3).setUsage(THREE.DynamicDrawUsage));
+            lineGeometry.setAttribute('color', new THREE.BufferAttribute(lineColors, 3).setUsage(THREE.DynamicDrawUsage));
+
+            const lMaterial = new THREE.LineBasicMaterial({
+                vertexColors: true,
+                blending: THREE.AdditiveBlending,
+                transparent: true,
+                opacity: 0.3
+            });
+
+            const lines = new THREE.LineSegments(lineGeometry, lMaterial);
+            scene.add(lines);
+
+            function animate() {
+                requestAnimationFrame(animate);
+
+                let vertexpos = 0;
+                let colorpos = 0;
+                let numConnected = 0;
+
+                for (let i = 0; i < particlesCount; i++) particlesData[i].numConnections = 0;
+
+                for (let i = 0; i < particlesCount; i++) {
+                    const particleData = particlesData[i];
+
+                    particlePositions[i * 3] += particleData.velocity.x * 0.5;
+                    particlePositions[i * 3 + 1] += particleData.velocity.y * 0.5;
+                    particlePositions[i * 3 + 2] += particleData.velocity.z * 0.5;
+
+                    if (particlePositions[i * 3] < -rHalf || particlePositions[i * 3] > rHalf) particleData.velocity.x = -particleData.velocity.x;
+                    if (particlePositions[i * 3 + 1] < -rHalf || particlePositions[i * 3 + 1] > rHalf) particleData.velocity.y = -particleData.velocity.y;
+                    if (particlePositions[i * 3 + 2] < -rHalf || particlePositions[i * 3 + 2] > rHalf) particleData.velocity.z = -particleData.velocity.z;
+
+                    for (let j = i + 1; j < particlesCount; j++) {
+                        const particleDataB = particlesData[j];
+                        const dx = particlePositions[i * 3] - particlePositions[j * 3];
+                        const dy = particlePositions[i * 3 + 1] - particlePositions[j * 3 + 1];
+                        const dz = particlePositions[i * 3 + 2] - particlePositions[j * 3 + 2];
+                        const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
+
+                        if (dist < 130) {
+                            particleData.numConnections++;
+                            particleDataB.numConnections++;
+                            const alpha = 1.0 - dist / 130;
+
+                            linePositions[vertexpos++] = particlePositions[i * 3];
+                            linePositions[vertexpos++] = particlePositions[i * 3 + 1];
+                            linePositions[vertexpos++] = particlePositions[i * 3 + 2];
+
+                            linePositions[vertexpos++] = particlePositions[j * 3];
+                            linePositions[vertexpos++] = particlePositions[j * 3 + 1];
+                            linePositions[vertexpos++] = particlePositions[j * 3 + 2];
+
+                            // Subtle Blueish-White Lines
+                            lineColors[colorpos++] = 0.8 * alpha;
+                            lineColors[colorpos++] = 0.9 * alpha;
+                            lineColors[colorpos++] = 1.0 * alpha;
+
+                            lineColors[colorpos++] = 0.8 * alpha;
+                            lineColors[colorpos++] = 0.9 * alpha;
+                            lineColors[colorpos++] = 1.0 * alpha;
+
+                            numConnected++;
+                        }
+                    }
+                }
+
+                lines.geometry.setDrawRange(0, numConnected * 2);
+                lines.geometry.attributes.position.needsUpdate = true;
+                lines.geometry.attributes.color.needsUpdate = true;
+                particles.geometry.attributes.position.needsUpdate = true;
+
+                particles.rotation.y += 0.0003;
+                lines.rotation.y += 0.0003;
+
+                renderer.render(scene, camera);
+            }
+
+            animate();
+
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+        });
+    </script>
+</body>
+
+</html>
